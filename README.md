@@ -91,9 +91,9 @@ A REST API for a simple CRM system.
 
 | Method | Endpoint | Auth | Description |
 |---|---|---|---|
-| POST | `/api/auth/register` | No | Register an employee |
-| POST | `/api/auth/login` | No | Login, returns JWT |
-| POST | `/api/enquiries` | No | Submit the public enquiry form |
+| POST | `/api/auth/register` | Yes | Register an employee |
+| POST | `/api/auth/login` | Yes| Login, returns JWT |
+| POST | `/api/enquiries` | Yes| Submit the public enquiry form |
 | GET | `/api/enquiries/unclaimed` | Bearer | List all unclaimed enquiries |
 | POST | `/api/enquiries/:id/claim` | Bearer | Claim an enquiry |
 | GET | `/api/enquiries/mine` | Bearer | List enquiries claimed by the logged-in employee |
